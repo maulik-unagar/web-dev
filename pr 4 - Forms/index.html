@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/submit.com" method="post">
+        <!-- this form will be submitted at submit.com after clicking the submit button -->
+    <label for="username">Username:</label>
+    <!-- use of autofocus & Required -->
+    <input type="text" autofocus required id="username"  name="username" placeholder="Enter Username">
+    <br>
+<br>
+    <label for="password" >Password: </label>
+    <input type="password" autofocus required name="password" id="password" placeholder="Enter Password">
+<br><br>
+<label for="gender">Gender:</label>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label>
+<!-- id to recognise and for for attribute in label -->
+ <!-- name for data base code -->
+  <!-- value for data base code  -->
+<input type="radio" id="female" name="gender"  value="female">
+<label for="female">female</label>
+
+
+<br><br>
+<label for="date"> Select DOB: </label>
+<input type="date" value="date" id="date" name="date">
+
+<br><br>
+<label for="file">Upload your Result</label>
+<input type="file" value="file" id="file">
+
+<br><br>
+<label for="file">Average Range:</label>
+<input type="range" min="0" max="100" value="range" id="range">
+
+<br><br>
+<label for="url">Portfolio URL</label>
+<input type="url" id="url" name="url" >
+<input type="submit" name="url" id="url" value="search">
+
+<br><br>
+<label for="textbox">Enter Your Review:</label>
+<textarea id="textarea" rows="4" cols="40"></textarea>
+
+<br><br>
+<select name="fruits">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="cherry">Cherry</option>
+</select>
+
+<br><br>
+
+<input type="checkbox" id="subscribe" name="subscribe" value="yes">
+<label for="subscribe">Subscribe to newsletter</label>
+
+
+<br><br>  
+<input type="submit" value="Submit">
+
+</form>
+</body>
+</html>

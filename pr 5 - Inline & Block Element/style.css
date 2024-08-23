@@ -1,0 +1,17 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1 , p , div {
+    background-color: rgb(205, 160, 248) ;
+    border-radius: 4px;
+    padding: 4px;
+
+}
+span,a  ,label , textarea{
+    background-color: chocolate;
+    border-radius: 4px;
+    padding: 4px;
+    
+}

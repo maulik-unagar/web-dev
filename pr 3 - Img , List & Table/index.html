@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr3</title>
+    <!-- use this for seo  -->
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- no need to use the "px in height attribute - only in html" -->
+    <img height="150" src="images.png" alt="GTA5 Image">
+
+    <br> <hr> 
+
+    <p><b>Table with using calspan & Rowspan</b></p>
+    <table>
+        <!-- notice the role of calspan & Rowspan -->
+        <caption><b>Student Details</b></caption>
+        <tr>
+            <th>Name</th>
+            <th>class</th>
+            <th>Fav Language </th>
+        </tr>
+        <tr>
+            <td>Maulik</td>
+            <td colspan="2">Tc2</td>
+            <!-- <td>java</td> -->
+        </tr>
+        <tr>
+            <td>Meet</td>
+            <td>Tc3</td>
+            <td>C++</td>
+        </tr>
+        <tr>
+            <td>Smit</td>
+            <td>Tc1</td>
+            <td>JS</td>
+        </tr>
+        <tr>
+            <td>Namit</td>
+            <td rowspan="2">Tc4</td>
+            <td>Python</td>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <!-- <td>Tc3</td> -->
+            <td>Ruby</td>
+        </tr>
+    </table>
+
+<br> <hr> <br>
+
+    <!-- use of thead , tfoot & tbody for better accessebility of code EX- in css applying  -->
+    <table border="1">
+        <!-- Caption -->
+        <caption><b>Employee Information</b></caption>
+    
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+    
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ankit</td>
+                <td>Developer</td>
+                <td>80,000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Binod</td>
+                <td>Manager</td>
+                <td>70,000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kiran</td>
+                <td>Manager</td>
+                <td>90,000</td>
+            </tr>
+        </tbody>
+    
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Employees</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><hr>
+    <h4>Unordered List</h4>
+    <!-- type = disc,square, circle -->
+     <!-- disk is by default  -->
+    <ul type = "square">
+        <li>Maulik</li>
+        <li>Binod</li>
+        <li>Carry</li>
+    </ul>
+    <h4>ordered List</h4>
+<!-- type = 1,I , i, a , A -->
+    <ol type = "1" start="15">
+        <li>Maulik</li>
+        <li>Binod</li>
+        <li>Carry</li>
+    </ol>
+</body>
+</html>
+
+
+<!-- at last just explor the Light house report  -->
+ <!-- and also explore
+  1.cumulative Layout shift - cls
+  2.Largest Contextual paint - lcp
+  3.First input delay - fid
+   -->

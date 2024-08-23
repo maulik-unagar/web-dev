@@ -1,0 +1,16 @@
+td{
+    border: 1px solid;
+}
+th{
+    border: 2px solid;
+}
+
+thead{
+    background: #5bb2fe;
+}
+tbody{
+    background: #96bfe3;
+}
+tfoot{
+    background: #f6ccc1;
+}
