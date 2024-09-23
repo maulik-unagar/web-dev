@@ -1,0 +1,46 @@
+
+/* creating gloal variables */
+/* variables can hold the colors , urls & numbers and many more  */
+
+:root{
+    --color : black;
+    --color2 : rgb(121, 112, 112);
+}
+
+*{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.nav{
+    /* using variables  */
+    background-color: var(--color);
+    color: antiquewhite;
+    padding: 2px;
+}
+
+.container{
+    background: rgb(60, 52, 52);
+    color: antiquewhite;
+    /* padding: 2px; */
+
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+    /* use of global variable with backup color - if variable like that dont exist then orange will be applied  */
+    border: 3px solid var(--color2 , orange);
+
+}
+
+ul{
+    display: flex;
+}
+
+ul li:first-child{
+    /* making local variable  */
+    --color : rgb(244, 181, 23);
+    background-color: var(--color);
+}

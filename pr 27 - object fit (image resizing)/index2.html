@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 23(2) </title>
+
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            /* background-color: antiquewhite; */
+
+             /* now instead of using background we will use background image  */
+             background-image: url(https://static.vecteezy.com/system/resources/thumbnails/028/794/707/small_2x/cartoon-cute-school-boy-photo.jpg);
+            background-position: center center;
+            /* use this to show the center of background-image without changing the aspect ratio  */
+
+            /* we put image in backgroud so that it can't be downloaded on right click */
+            /* but this technique works only on noob - it can be download by doing inspect element  */
+
+            /* if we use small image and our box is large then it will start repeating to fill the gaps  */
+            /* use no repeat to overcome this problem  */
+            background-repeat: no-repeat;
+
+            /* if we want to allow repeat in only x axix then  */
+            /* background-repeat: repeat-x; */
+
+        }
+
+    </style>
+
+</head>
+<body>
+   
+     <div class="container">
+        
+     </div>
+</body>
+</html>

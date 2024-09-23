@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 12</title>
+
+
+    <style>
+        *{
+            margin: 1px;
+            padding: 1px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .box{
+            /* by this our div will become inline element  */
+            /* display: inline; */
+
+            display: inline-block;
+            /* width: 400px; */
+            border: 2px solid black;
+            padding: 50px;
+        }
+        /* note - padding & margin are not applied completly in inline element  */
+        /* margin & padding will not be applied from top in inline element  */
+        /* even we can't apply width to inline element  */
+        /* the solution is to make it always inline block  */
+
+        /* this is the main difference bet inline , block & inline block elements */
+
+        /* now lets see display & visiblity 
+        display: none;-- now all the thing will not be desplayed 
+        visibility: hidden;  -- now only visiblity is gone but its present there  */
+
+
+        .box{
+            /* display: none; */
+            /* visibility: hidden; */
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- Now we will learn to convert block element to inline element  -->
+
+
+    <div class="box">
+        i am Div and i am block level element
+    </div>
+    <div class="box">
+        i am Div and i am block level element
+    </div>
+    
+    <span>
+        i am a span - inline element. 
+    </span>
+
+    <span>
+        i am a span - inline element. 
+    </span>
+</body>
+</html>

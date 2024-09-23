@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 23 </title>
+
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+        }
+
+        img{
+            width: 300px;
+            height: 300px;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid darkblue;
+            /* till now our image is strached  */
+
+            object-fit: cover;
+            /* by telling object fit cover we are saying to cover the 300px wala box -- not 500px wala box */
+
+            /* to show whole image by leaving space in the 300px wala box use contain */
+            /* object-fit: contain; */
+
+            /* if we want to cover whole space and to cover this box image will be cut - and we also want to give that left part of the image should cut to fit the image in box  */
+
+            /* object-position: top right; */
+
+
+            /* to fill all the box space with the image - without looking at the aspectration of image  */
+            /* object-fit: fill; */
+
+            /* we can give the gap but image and box by using  */
+            /* object-position: 40px 40px; */
+
+        }
+    </style>
+
+</head>
+<body>
+    <!-- object fit is used to position the image in box  -->
+     <div class="container">
+        <img src="img.jpg" alt="">
+     </div>
+</body>
+</html>

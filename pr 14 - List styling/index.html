@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 14</title>
+
+    <style>
+        li {
+            /* by default every list has display: list-item */
+            /* list is combination of marker and elements  */
+            /* use this to remove marker from list  */
+            /* list-style: none; */
+            background-color: slateblue;
+
+            /* but still our marker is out of the BG color  */
+            /* now we will use list style position to bring the marker inside  */
+            list-style-position: inside;
+            border: 2px solid black;
+
+            /* we can also use image or emojee on place of marker by using  */
+            /* list-style-image:    ; */
+            list-style-type: "😍";
+            /* list-style-type: square; */
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

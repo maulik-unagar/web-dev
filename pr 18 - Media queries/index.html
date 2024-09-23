@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 18 </title>
+
+    <style>
+        body {
+            background-color: orchid;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* syntax - @media not/only mediatype and (expressions){
+            } */
+
+        /* media type - screen , all & print (for printer )  */
+        /* mostly screen is used  */
+
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: rgb(220, 48, 48);
+            }
+        }
+
+        /* above syntax is the 90% used media query  */
+
+        /* lets practice it again  */
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: darkturquoise;
+            margin: 10px;
+        }
+
+        .boxes{
+            display: flex;
+
+        }
+
+        /* it will work even if you dont put only  */
+        @media only screen and (max-width:455px){
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        /* another usefull media query  */
+        @media only screen and (orientation:horizontal){
+            body{
+                border: 10px solid rgb(17, 28, 17)
+            }
+            /* landscape is when width is greater then height  */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div>
+        i am a Div
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

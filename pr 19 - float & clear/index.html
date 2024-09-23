@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 19</title>
+
+    <style>
+
+/* float & clear is the old technique to use now -- instead use display flex */
+/* but still be clear about it bcz in old sites it was already used  */
+
+        *{
+            font-family: Geneva, Tahoma, sans-serif;
+        }
+
+        div:nth-child(2){
+            background-color: rgb(116, 116, 238);
+            border: 2px solid black;
+
+        }
+        div:nth-child(3){
+            background-color: rgb(205, 229, 86);
+            border: 2px solid black;
+
+            /* to clear the any side of image use this  */
+            clear: left;
+        }
+        div:nth-child(4){
+            background-color: rgb(165, 88, 238);
+            border: 2px solid black;
+        }
+    
+        .cards img {
+            /* to float the image in screen use this  */
+            float: left;
+        }
+        .cards img{
+            /* image will be overflowed box - this is basic and imp problem  */
+            border: 4px solid blue;
+            /* use this to overcome overflow problem  */
+            display: flow-root;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- shortcut--- use div.cards>div.card*3 -->
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsTpqywENQ-UHKuBxovJKBUQ8RQnPTY4hq3Q&s" alt="">
+        <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, aliquam libero laboriosam error nihil accusamus. Accusamus assumenda sit, ratione nemo quia vero pariatur doloribus debitis numquam voluptate excepturi temporibus? Nostrum eum a, sequi tenetur aliquam vel assumenda, mollitia necessitatibus repellendus quisquam quidem. Impedit ut rem consequuntur alias aut? Repellat, officia? </div>
+
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dicta doloremque alias assumenda quo velit temporibus illum aperiam maiores. Laboriosam aperiam illo deleniti maxime veritatis cum nihil exercitationem eaque optio accusamus aliquid hic assumenda magnam, quae, impedit in ipsam molestias error architecto et nam veniam blanditiis! Autem molestias ducimus dolores ratione! Placeat nam dicta reprehenderit optio, vitae nisi quas nobis sequi commodi, molestiae qui libero! Voluptatibus in, ipsum omnis iure totam a praesentium atque aliquid. Distinctio unde rem doloribus voluptatum provident. Placeat eaque voluptatem officia odio? Placeat, incidunt. Veritatis reiciendis minus possimus, nisi quidem corporis placeat quod quae repellendus mollitia architecto, cumque, vel repudiandae corrupti atque eos ipsa consequatur natus dicta assumenda dolores? Officia dolore provident aspernatur id obcaecati aperiam iusto inventore! Ex, ducimus, nam ipsam earum voluptate suscipit repudiandae vitae labore expedita exercitationem est reprehenderit tempora temporibus recusandae. Blanditiis consectetur magnam assumenda, velit at voluptatum nam non distinctio unde ut minima corporis ipsam ipsum nihil voluptatem eos hic aperiam consequatur reiciendis eaque? Odio saepe dolorum sit reiciendis nisi expedita impedit corrupti, facilis ea dolor labore in voluptatum amet, tempora quae qui doloribus omnis exercitationem voluptas alias beatae ipsum? Sequi iure eveniet temporibus saepe eos neque unde itaque molestias dolores! </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

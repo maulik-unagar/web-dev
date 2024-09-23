@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div {
+    /* see this  */
+    line-height: 4;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+    text-indent: 10px;
+
+}
+
+.lorem{
+    border: 2px solid;
+    width: 350px;
+    height: 300px;
+    /* text-align: center; */
+    /* word-break: break-all; */
+    text-overflow: ellipsis;
+    overflow: scroll;
+}
+
+
+a:link {
+    color: blueviolet;
+}
+
+a:visited {
+    color: rgb(255, 0, 0);
+}
+
+a:hover {
+    background-color: cadetblue;
+}
+
+p:first-child {
+    background-color: chocolate;
+}
+
+/* colors can be added as color: rgb or rgba . where value of a is bet 0-1 . it is opasity or alpha value*/
+/* h1{
+    color: red;
+    color: #0bee00;
+    color:rgb(76, 77,22);
+    color:rgba(70, 200,202,0.024);
+    
+} */
+ /* 1. color keyword */
+ /* 2. hsl - hue , saturation , lightness */

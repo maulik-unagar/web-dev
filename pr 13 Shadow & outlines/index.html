@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 13 </title>
+    <style>
+
+        /* css box shadow syntax
+        box-shadow: h-offset v-offset blur spread color inset; */
+
+        .box {
+            border: 2px solid black;
+            padding: 30px;
+            box-shadow: 5px 5px 15px  5px black;
+            /* dont apply comma bet pixel value like 5px, 5px -- its not valid */
+            /* tip - go to inspect option and make changes according to need and then change here - there you will see new futures also  */
+        }
+
+        p{
+            /* text shadow  */
+            text-shadow: 8px 8px 8px black;
+            /* out line - its like a border but the main difference is that it does not follow border box model & it dont takes space  */
+            outline: 4px solid royalblue ;
+            outline-offset: 3px;
+            /* outline-offset is the distance from box . just explor it from the inspect option to clear the outline concept  */
+            /* out line cant be done curve on edge - it will copy border so just do changes in border radius to see the change in out line  */
+
+        }
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        i am a box
+    </div>
+
+    <p >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatum iste ex distinctio ducimus? Adipisci sint nam non ipsam veritatis animi itaque fuga? Inventore nostrum voluptates maiores eum earum voluptate.
+    </p>
+</body>
+</html>

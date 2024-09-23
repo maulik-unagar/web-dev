@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 22 </title>
+
+    <style>
+        .container{
+            background-color: skyblue;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box{
+            background-color: purple;
+            width: 5vw;
+            height: 4vh;
+            /* to make the smooth transition of this element we use transition property  */
+            /* always use the transition property in 4 stage  */
+
+            transition-property: transform , background-color ;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+            /* now open inspect element and remove the move class */
+            /* here transition delay is the waiting time for transition and duration is the time of transition  */
+            /* we can see and make transition-timing-function from dev tools - explore it  */
+
+            /* to give all above property in one line use this  */
+            transition: transform 3s ease-in-out 1s;
+            
+            
+        }
+
+        .move{
+            transform: translateX(10vw)  translateY(10vh);
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <div class="box move ">
+
+        </div>
+    </div>
+</body>
+</html>

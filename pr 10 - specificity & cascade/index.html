@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 10 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <html>
+<head>
+    <!-- selector topic is imp for interview perspective -->
+    <style>
+        *{
+            color: gray;
+        }
+        #title{
+            color: red;
+        }
+        .h1{
+            color: blue;
+        }
+        h1{
+            color: pink;
+        }
+
+
+        /* ATTRIBUTE selector */
+        /* [data-x = a]{
+            background-color: chartreuse;
+        }
+        now put this value as a class in html */
+
+    </style>
+
+</head>
+<body>
+    <h1 id="title" class="h1" style="color:purple">CSS specificity check</h1>
+    <hr>
+    <p>user agent stylesheet -- its browser generated stylesheet</p>
+    
+    <img src="img.png" width="400px" alt="">
+<!--     
+    The Cascade Algorithm
+    CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element -->
+    <!-- it consist of 4 stages mentioned below -->
+    <!-- which css will be applied will depend on - Position and order of css , Specificity ,Origin (user generated stylesheet[browser generated css]) , Importance tag  -->
+
+
+    <!-- Specificity Calculation
+    To calculate specificity, assign a value to each part of the selector:
+    
+    Universal Selector: 0
+    Element selectors and pseudo-elements: 1
+    Class selectors, attribute selectors, and pseudo-classes: 10
+    ID selectors: 100
+    Inline styles: 1000 -->
+
+    <!-- So, the order of specificity is:
+    Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+
+
+    <!-- Quick Quiz -->
+    <!-- What will be the specificity value of the following selector: -->
+
+    <!-- a.harryclass.rohan-class[href]:hover {
+        color: red;
+      } -->
+
+      <!-- ANS: 1 (element[a]) + 10 (class[harryclass]) + 10 (class[rohan-class]) + 10 (attribute[[href]]) + 10 (pseudo-class[:hover]) = 41. -->
+       <!-- here href is attribute class like data x , it will only be applied if href is written in class section -->
+        <!-- EX- class= "[href]" -->
+
+        <!-- see example of spacificity priority apply of css from code with harry website
+        https://www.codewithharry.com/tutorial/css-specificity/ -->
+
+</body>
+</html>
+</body>
+</html>

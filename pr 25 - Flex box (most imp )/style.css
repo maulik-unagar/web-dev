@@ -1,0 +1,24 @@
+*{
+    font-family: Geneva, Tahoma, sans-serif;
+    
+}
+
+.image {
+    border: 2px solid black;
+    display: inline-block; /* Changed from inline to inline-block to respect width and height */
+    height: 300px; /* This is the height of the container */
+    width: 200px; /* This is the width of the container */
+    text-align: center; /* Center align text inside the container */
+    padding: 10px; /* Optional: adds padding inside the border */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+img {
+    width: 200px; /* Set width directly on the image */
+    height: 200px; /* Set height directly on the image */
+    object-fit: contain; /* Ensure the image maintains aspect ratio */
+    display: block; /* Removes inline spacing issues */
+    margin: 0 auto; /* Centers the image horizontally */
+}

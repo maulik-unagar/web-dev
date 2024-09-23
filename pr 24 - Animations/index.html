@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 22 </title>
+    <style>
+        *{
+            font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .container{
+            background-color: goldenrod;
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            /* apply animation here  */
+            animation: firstanimation;
+            /* to apply 2 animation in one element use comma */
+            /* animation: firstanimation , secondanimation; */
+            
+            animation-duration: 3s;
+            /* use this 2 prperty to make transition - without this 2 animation will not work  */
+
+            /* more property  */
+            /* animation-iteration-count: 4; */
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+
+            /* dont confuse bet transition and animation . both do same work only  */
+            /* use transition for simple animation  */
+            /* use animation for complex and repeating animation  */
+
+            /* animation-play-state: paused; */
+            /* animation-play-state: running; */
+            /* this is used with javascript to pause the animation at runtime  */
+
+            /* due to this allfunctionality we use animation bcz it easy and this cant be done with the transition property  */
+
+            /* animation-fill-mode:backwards; */
+            /* use this to give the start point of the animation  */
+
+        }
+        @keyframes firstanimation {
+            from {
+              
+            }
+            to {
+                transform: translateX(1000px);
+            }
+        }
+        @keyframes secondanimation {
+            0%{
+                transform: rotate(100deg);
+            }
+            25%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

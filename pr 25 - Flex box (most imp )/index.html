@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 21</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* flexbox is the topic which confuse even advance devlopers  */
+        /* it is used for making the layout of websites  */
+
+        /* in older time people used to use float & postion to center the div  */
+        /* it was the headac to center the dev - which is now solved by flexbox in css3 */
+
+        .container {
+            border: 2px solid red;
+            display: flex;
+
+            /* to ceneter the boxes  - 90% use of flex box */
+            /* justify-content: center;
+            align-items: center;
+            height: 40vh; */
+            /* we may put justify-content: flex-end , flex start , left , right , space around , space between  */
+            /* we may put align-itema: flex-end , flex start , center , base line (used to make center of all element in one line )- rarely used , etc....  */
+
+
+
+            /* till now all concept is covered and flex box is used 90% this much only - so lets increase our knowledge in flexbox by studing deeply */
+            /* now plz increase the number of boxes  */
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            /* to make row to column  */
+            /* flex-direction: column; */
+            /* now column is startimg up-down , to make it down-up put column-reverse  */
+
+            /* note - justify-content:center always makes all boxes center with respect to the main axis ; */
+            /* if flex direction is column the main axis is standing vertical  */
+            /* if flex direction is row the main axis is laying down the horizonta  */
+            /* and according to the flex direction only justify content will work */
+
+            /* now on increasing the number of boxes it is overflowing from the box and size is also disturbed - now we will use flex wrap to wrap the flex box  */
+            flex-wrap: wrap;
+            /* now our box size is restored to as it was  */
+
+            /* now lets come out of flex box & focus on align content  */
+            /* align-content: center; */
+            /* align-content: flex-start; */
+            /* it is used to improve the alignment of boxes  */
+            /* now try to reduce the boxes and see the difference in alignment */
+
+            /* gap property - used to give gap bet. boxes  */
+            /* gap: 10px; */
+            /* gap is made in all direction of box  */
+            /* we can define row and column gap individuly also  */
+            /* column-gap: 10px;
+            row-gap: 10px; */
+            /* to write row and column gap in one line  */
+            /* gap: 10px 10px; */
+
+            /* remimber this all property are provided to container and you have to remimber which property is of item and which of item-box-element */
+            /* most used property are applied on container only  */
+
+
+
+        }
+
+        .item {
+            /* flex-grow: 1; */
+            background-color: blueviolet;
+            height: 30px;
+            width: 30px;
+            border: 2px solid rgb(0, 0, 0);
+            margin: 4px;
+        }
+
+        /* jitna zyda order utna item end me ayega  */
+        /* default order is zero */
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+
+
+        /* flex grow is same as callspan and rowspan in table - flex grow is used to enlarge the space of box  */
+        /* first of all declare the flex-grow- 1 in all item so that we can increase in respect to that 1   */
+        .order-1 {
+            /* flex-grow: 2; */
+            /* flex shrink is the ability of box to shrink on changing the responsiveness or screen size  */
+            /* flex-shrink: 2; */
+            /* now this box will shrink with double speed  */
+            /* to see the shrink plz remove the wrap first  */
+            /* this properties are rarely used - flex-shrink , flex-grow  */
+
+
+            /* to align any perticulat item use align-self */
+            /* align-self: baseline; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+        <div class="item order-3">6</div>
+        <div class="item order-1">7</div>
+
+
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+
+    </div>
+
+    <div class="image">
+        <img width="200px" height="200px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTK-BoI5pWAyvJNliwbGSBqjHjyFJF9wWl0g&s" alt="">
+        <h2>Align items</h2>
+    </div>
+    <div class="image">
+        <img width="200px" height="200px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDo8oBNZimtW1L_rW0EwZiBp6MYE-pJtFLA&s" alt="">
+        <h2>justify content</h2>
+    </div>
+</body>
+
+</html>

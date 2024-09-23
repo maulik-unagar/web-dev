@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 20</title>
+    <meta name="description" content="">
+    <style>
+        *{
+            font-family: Geneva, Tahoma, sans-serif;
+        }
+
+        /* to select the 1st box */
+        /* .box:first-child{
+            background-color: violet;
+        } */
+
+
+        /* to select the first line  */
+        /* put 2:: */
+        /* .box1::first-line{
+            background-color: orange;
+        } */
+
+        /* attribute selector */
+        /* [data-color="primary"]{
+            background-color: red;
+        } */
+
+
+        /* nth chile psudo selector -- */
+        /* .box:nth-child(even){
+            background-color: skyblue;
+        }
+        .box:nth-last-child(2){
+            background-color: forestgreen;
+        } */
+
+        /* dynamically insert element by css - using before */
+        /* .boxes::before{
+            content: "this is before boxes class - and it is added by css ";
+            background-color:cadetblue;
+        }
+        .boxes::after{
+            content: "this is before boxes class - and it is added by css ";
+            background-color:cadetblue;
+        } */
+
+
+        /* now our selected text will be colored now - try selecting with mouse */
+        /* ::selection{
+            color: wheat;
+            background-color: maroon;
+        } */
+
+
+        /* here we are selecting the first latter */
+        /* .box::first-letter{
+            color: maroon;
+            font-weight: 400;
+            font-size: 2rem;
+        } */
+
+        input::placeholder{
+            /* color: grey; */
+            color: blue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box1 box">Hey i am Box 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente magnam distinctio molestias minus. Veniam quae tempore perspiciatis nisi, quos dolore?</div>
+        <div class="box2  box">Hey i am Box 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, fuga!</div>
+        <div class="box3  box">Hey i am Box 3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, consequatur. </div>
+
+        <input type="text" placeholder="Type your Name Here    ">
+    </div>
+</body>
+</html>
