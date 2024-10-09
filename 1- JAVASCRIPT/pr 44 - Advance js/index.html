@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 44 </title>
+</head>
+<body>
+
+    <script>
+    // use cont + shift + i to open devtools in any site 
+    // await function is valid only in async function 
+    // for that we use IIFE - imidiately invoke function     
+
+    async function sleep () {
+        return new Promise((resolve , reject ) => {
+            setTimeout(() => {
+                resolve(45)
+            }, 2000);
+        })
+    }
+
+    // below function is IIFE , and without this we will get the error of - await function is only valid in async function
+    // just comment the below main function run the below 4 line to see the error 
+    // let a = await sleep()
+    //     console.log(a);
+    //     let b = await sleep()
+    //     console.log(b)
+
+    // (async function main (){
+    //     let a = await sleep()
+    //     console.log(a);
+    //     let b = await sleep()
+    //     console.log(b)
+        
+    // })()
+
+
+    // now there is a concept of destructuring 
+    // let x, y = [1,2]
+    // console.log(x,y)
+    // output - undefined (2) [1, 2]
+    // it will not give the propper out put - it will give first undefined and then our array 
+
+    // but the write way is this and this is called destructuring 
+    // let [x, y] = [1,2 , 7 ]
+    // console.log(x,y)
+    // here 1 is assign to x -- and y is assign to 2 -- and 7 will assign to nothing
+
+    
+    // let [x, y ,...rest] = [1,2,3,4,5,6,7,8 ]
+    // console.log(x,y,rest)
+    // there can be any variable in place of rest - we may use best in place of rest 
+    // but if we dont apply the "..." three dot then in this code 3 will be stored in rest and rest number will not be stored any were
+
+
+    // similarly we do have this to get access to value one by one from objet 
+    // let obj = {
+    //     a:1,
+    //     b:2,
+    //     c:3
+    // }
+    // let {a,b} = obj;
+    // console.log(a,b)
+    // this may be used in practicle projects 
+
+    // spread operator - it just opens the value (.arr)
+
+    // let arr = [1,3,5]
+    // console.log(arr[0] + arr[1] + arr[2]);
+    // console.log(Sum(arr[0] , arr[1] , arr[2]));
+    // console.log(Sum(...arr))
+    // note - but it is giving error that - sum is not defined - in chatgpt also it is first of all making function with name sum
+    // here we are using spread operator to open the array and then we are passing the values
+
+    // hoisting - if we declare var x = 10 ; at the end pf program and if we use it at the first line of code then it will not give error it will give undefined bcz (var x) will be fetched auto by compile at 1st line but not var x = 10
+    // means compiler knows that there is something with name x but it dont knows the value of x 
+    // hoisting - it refers to the process where the intrepreter appears to move the declaration code to the top of code before the execution 
+    // it is mostly asked in interview 
+
+    // ex:
+    // hello("guys")
+
+    // function hello (name){
+    //     // this works 
+    // }
+
+    // but if we make the function with help of const then this thing cant work - it will give error of - cant access "hello" before initialization 
+    
+
+
+
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling </title>
+
+    <style>
+        .container {
+            background-color: burlywood;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- it is very importent for interviews  -->
+    <div class="container">
+        <span class="childContainer">
+            <div class="child">
+                i am child
+            </div>
+        </span>
+    </div>
+
+    <script>
+
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert("Child was clicked")}
+        );
+        document.querySelector(".childContainer").addEventListener("click", () => alert("Child container was clicked"));
+        document.querySelector(".container").addEventListener("click", () => alert("Container was clicked"));
+
+        // here the concept of event bubbling is seen - it is same is if i am leaving in gujrat then technically i am leaving in india also 
+        // here all three events are triggred
+
+        // to encounter this problem we use the event object which help us to manipulate the fired event  
+        // this method helps us to stop the bubbling 
+        // now if the son event is fired it - ony sun will be fired . its father and for-father events will not be fired 
+
+        // this is asked in interviews 
+
+        
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+        // let a = setInterval(() => {
+        //     document.querySelector(".container").style.background = getRandomColor();
+        // }, 1000);
+
+        // console.log(a)
+
+        let a = setTimeout(() => {
+            document.querySelector(".childContainer").style.background = getRandomColor();
+        }, 1000);
+        console.log(a)
+
+        // set interval run multiple time and set timeout runs only one time after the give time interval 
+        // to cancle the setInterval we use clearInterval 
+        // and to cancle the setTimeout we use clearsetTimeout 
+
+
+
+
+    </script>
+</body>
+
+</html>

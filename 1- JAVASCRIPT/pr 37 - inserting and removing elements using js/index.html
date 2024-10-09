@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR 37</title>
+</head>
+<body>
+
+    <div class="container  blue ">
+        <div class="box" style="opacity: 1;">i am box 1 </div>
+        <div class="box">i am box 2 </div>
+
+    </div>
+
+
+    <script>
+        // chapter 8 
+        // do read this carefully and remimber all concept 
+
+        // console.log(document.querySelector(".box").innerHTML);
+        // console.log(document.querySelector(".container").innerHTML);
+        // it is used to fetch the inner html of box class & container class 
+
+        // use innertext to only fatch the text present inside any class 
+        // document.querySelector(".container").innerText
+        // -- use it in console 
+
+        // innerhtml - it allows to get the html inside element as string 
+        // outerhtml - it contains full html + element itself 
+
+        // imp------------------------------
+        // document.querySelector(".container").outerHTML
+        // document.querySelector("body").outerHTML
+
+        // use tagname to findout the type of that element - its div or span or table can be findout using tagname
+        // console.log(document.querySelector(".container").tagName)
+        // its div - as printed in console 
+
+        // console.log(document.querySelector(".container").nodeName)
+        // similarly we have node name which is applicable for all node in html , where tag is only for the elements 
+
+        // console.log(document.querySelector(".container").textContent)
+        // used to get all the text insde the container 
+
+        // there is a hidden attribute used to hide the element from desplaying 
+        // ex <div hidden ></div>
+        // this can be applied from the console on browser , suppose we want to hide some specific element from any site then use this 
+        // document.querySelector(".container").hidden = "true"
+        // now our container is hidden and now <div hidden > is applied in the container div 
+
+        // document.querySelector(".box").innerHTML = "heyy its new text "
+        // use this to change the html  from js 
+
+        // use this to check if there is any attribute in html or not  - it returns true
+        // console.log(document.querySelector(".box").hasAttribute("style"));
+
+        // console.log(document.querySelector(".box").getAttribute("style"));
+        // use get attribute to see the whole style attribute 
+
+        // console.log(document.querySelector(".box").setAttribute("style", "background-color: red; color:white"));
+        // use setAttribute to set the style 
+
+        // console.log(document.querySelector(".box").removeAttribute("style"));
+        // use removeAttribute to remove the any attribute  
+
+        // document.designMode="on"
+        // use this in console at any site and now you can edit any site like notepad
+
+        // read about data attribute from notes 
+        // ex - data-createdby= "maulik"  --- use it in css 
+        // document.querySelector(".box").dataset -- use this to see all the data attributes used in box class 
+
+        // remimber this -------------------------------
+        // inserting element using append - here we are adding data dynamically using js 
+        // let div = document.createElement("div");
+        // div.innerHTML = "i inserted <b> using js </b>" 
+        // div.setAttribute("class" , "created") ;
+        // document.querySelector(".container").append(div)
+        
+
+        // like append we also have prepend , after , before & replacewith to add the element at different palces in respect to div 
+        // like if we use before the element will be added before the div 
+
+        
+        // now lets add html 
+        // let cont = document.querySelector(".container");
+        // cont.insertAdjacentHTML("afterbegin" , "<b> i am inserted Html using js </b>")
+        // like afterbegin we have afterend , beforebegin & beforeend to add the html in respect to any selected class 
+        // like insertAdjacentHTML we also have insertAdjacentText & insertAdjacentElement to add text and element - select them on bases of what you want to add . it is html , text or element 
+
+        // refer notes and do practice all concepts 
+
+        // remove - used to remove the element 
+        // document.querySelector(".box").remove()
+        // now box 1 will be removed bcz query selector selects only one element 
+
+        // accessing class 
+        // console.log(document.querySelector(".container").classList)
+        // console.log(document.querySelector(".container").className)
+
+        // we can also add or remove class -- heavyly used
+        // document.querySelector(".container").classList.add("new-class")
+        // document.querySelector(".container").classList.remove("blue")
+        // now check in devloper tools it is added or not
+
+        // toggle - its like a switch , if its open then close and vice-versa 
+        // console.log(document.querySelector(".container").classList.toggle("blue"))
+        // it is use to add and remove the css by js 
+
+
+        // use this concept to make arraay itteration of whole html collection 
+            // Array.from(ab).forEach((e) => {
+            //     console.log(e)
+            // })
+
+            // note - Array.from(ab) - use this to make array of elements 
+
+
+
+
+
+
+        
+        
+
+    </script>
+    
+</body>
+</html>
